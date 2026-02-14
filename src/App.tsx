@@ -40,7 +40,7 @@ function App() {
               A can. An alley. A choice. How the gutter made a king.
             </p>
             <div className="hero-buttons">
-              <a href="#" className="hero-btn hero-btn-twitter" title="Follow on X" aria-label="Follow on X">
+              <a href="https://x.com/TheMonster_Dev" target="_blank" rel="noopener noreferrer" className="hero-btn hero-btn-twitter" title="Follow on X" aria-label="Follow on X">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 X
               </a>
@@ -216,7 +216,7 @@ function App() {
             <div className="cta-buttons">
               <a href="#" className="cta-btn cta-primary">Buy $WHTMSTR</a>
               <a href="#" className="cta-btn cta-secondary">Telegram</a>
-              <a href="#" className="cta-btn cta-secondary">X</a>
+              <a href="https://x.com/TheMonster_Dev" target="_blank" rel="noopener noreferrer" className="cta-btn cta-secondary">X</a>
             </div>
             <p className="cta-disclaimer">
               Meme token. NFA. The Boss is a cartoon can, not a financial advisor.
