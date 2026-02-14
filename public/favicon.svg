@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- White Monster can -->
+  <rect x="10" y="4" width="44" height="56" rx="6" fill="#ffffff"/>
+  <!-- Monster M claw - 3 strokes -->
+  <path d="M18 16 L24 48 L20 48 L14 24 Z" fill="#111"/>
+  <path d="M32 12 L32 52 L28 52 L28 12 Z" fill="#111"/>
+  <path d="M46 16 L52 48 L48 48 L42 24 Z" fill="#111"/>
+  <!-- Can top -->
+  <ellipse cx="32" cy="8" rx="20" ry="4" fill="#f0f0f0"/>
+</svg>
