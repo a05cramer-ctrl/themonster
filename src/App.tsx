@@ -3,6 +3,10 @@ import imageUrl from './image.png'
 import comicStrip from './Screenshot 2026-02-14 at 18.01.53.png'
 import storeHeist from './Screenshot 2026-02-14 at 18.02.21.png'
 
+const CONTRACT_ADDRESS = 'EGms7zPc3aecV4dHspLjAtp8y3iQJu6YEQkVvDHnpump'
+const JUPITER_URL = `https://jupiter.ag/swap/SOL-${CONTRACT_ADDRESS}`
+const DEXSCREENER_URL = `https://dexscreener.com/solana/${CONTRACT_ADDRESS}`
+
 function App() {
   return (
     <div className="app">
@@ -44,7 +48,7 @@ function App() {
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 X
               </a>
-              <a href="#" className="hero-btn hero-btn-chart" title="View Chart" aria-label="View Chart">
+              <a href={DEXSCREENER_URL} target="_blank" rel="noopener noreferrer" className="hero-btn hero-btn-chart" title="View Chart" aria-label="View Chart">
                 <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
                 Chart
               </a>
@@ -193,7 +197,9 @@ function App() {
               </div>
               <div className="now-card">
                 <span className="now-label">Contract</span>
-                <span className="now-value">Renounced</span>
+                <a href={`https://solscan.io/token/${CONTRACT_ADDRESS}`} target="_blank" rel="noopener noreferrer" className="now-value now-value-link" title={CONTRACT_ADDRESS}>
+                  {CONTRACT_ADDRESS.slice(0, 4)}...{CONTRACT_ADDRESS.slice(-4)}
+                </a>
               </div>
             </div>
             <div className="roadmap-compact">
@@ -214,7 +220,8 @@ function App() {
               The story isn't over. It's just getting started.
             </p>
             <div className="cta-buttons">
-              <a href="#" className="cta-btn cta-primary">Buy $WHTMSTR</a>
+              <a href={JUPITER_URL} target="_blank" rel="noopener noreferrer" className="cta-btn cta-primary">Buy $WHTMSTR</a>
+              <a href={DEXSCREENER_URL} target="_blank" rel="noopener noreferrer" className="cta-btn cta-secondary">Chart</a>
               <a href="#" className="cta-btn cta-secondary">Telegram</a>
               <a href="https://x.com/TheMonster_Dev" target="_blank" rel="noopener noreferrer" className="cta-btn cta-secondary">X</a>
             </div>
